@@ -33,9 +33,99 @@
 // var city = arr.slice(2,4);
 // document.write(city);
 
-var arr = ["this", "is", "my", "cat"];
-var final = arr.join(" ");
-document.write(final);
+// var arr = ["this", "is", "my", "cat"];
+// var final = arr.join(" ");
+// document.write(final);
 
-  
-  
+// document.write(arr)  
+
+// var arr = ["eat","ate","act","cat","art","rat"]
+// var value1 = "";
+// var value2 = "";
+// var array = [];
+// var arr1 = "";
+// var arr2 = "";
+
+// // var flag = false;
+// for(let i = 0; i <= arr.length; i++){
+//     console.log(i)
+//     value1 = arr[i];//eat
+//     for(let j = 0; j <= arr.length; j++){
+//             value2 = arr[j]//ate
+//             arr1 = value1
+//             arr2 = value2
+//             console.log(arr1,arr2)
+
+//             arr1 = arr1.split("");
+//             arr1 = arr1.sort();
+//             arr1 = arr1.join("");
+            
+//             arr2 = arr2.split("");
+//             arr2 = arr2.sort();
+//             arr2 = arr2.join("");
+            
+            
+//             if(arr1 == arr2){
+//              array.push([value1,value2])
+//             //  flag = true
+//              console.log(array)
+//             }
+//         }
+//     }
+
+
+//        var arr = ["eat","ate","act","cat","art","rat"]
+//        var array = [];
+//        var count = 0;
+//     // var store = "";
+//         for(let i = 0; i < arr.length; i++){
+//          for(let j = 0; j < arr.length; j++){
+//             var arr1 = arr[i];
+//             var arr2 = arr[j];
+//                 // console.log(arr1,arr2)
+//                 for(let k = 0; k < arr1.length; k++){
+//                     for(let l = 0; l < arr2.length; l++){
+//                         // console.log(arr1[k],arr2[l])
+//                         if(arr1[k] == arr2[l]){
+//                             // store += arr1[k]
+//                             count++
+//                             // console.log(arr1[k])
+//                             // console.log(count,arr1,arr2,arr1.length)
+//                             if(count == arr1.length){
+//                                 array.push([arr1,arr2])
+//                                 //  console.log("task has been completed")
+//                             }
+                        
+//                         }
+//                     };
+//                         // console.log("---------------")
+//                     };
+//                     count = 0
+//                     // console.log(count,array)
+//                     // console.log("end")
+//          }
+//         }
+//  document.write(array)
+
+var arr = ["eat","ate","act","cat","art","rat"]
+var array = [];
+var count = 0;
+ for(let i = 0; i < arr.length; i++){
+  for(let j = 0; j < arr.length; j++){
+     var arr1 = arr[i];
+     var arr2 = arr[j];
+         for(let k = 0; k < arr1.length; k++){
+             for(let l = 0; l < arr2.length; l++){
+                 if(arr1[k] == arr2[l]){
+                     count++
+                     if(count == arr1.length){
+                         array.push([arr1,arr2])
+                     }
+                 
+                 }
+             };
+             };
+             count = 0
+  }
+ }
+document.write(array)
