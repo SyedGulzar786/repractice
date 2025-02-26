@@ -107,25 +107,25 @@
 //         }
 //  document.write(array)
 
-var arr = ["eat","ate","act","cat","art","rat"]
-var array = [];
-var count = 0;
- for(let i = 0; i < arr.length; i++){
-  for(let j = 0; j < arr.length; j++){
-     var arr1 = arr[i];
-     var arr2 = arr[j];
-         for(let k = 0; k < arr1.length; k++){
-             for(let l = 0; l < arr2.length; l++){
-                 if(arr1[k] == arr2[l]){
-                     count++
-                     if(count == arr1.length){
-                         array.push([arr1,arr2])
-                     }
+// var arr = ["eat","ate","act","cat","art","rat"]
+// var array = [];
+// var count = 0;
+//  for(let i = 0; i < arr.length; i++){
+//   for(let j = 0; j < arr.length; j++){
+//      var arr1 = arr[i];
+//      var arr2 = arr[j];
+//          for(let k = 0; k < arr1.length; k++){
+//              for(let l = 0; l < arr2.length; l++){
+//                  if(arr1[k] == arr2[l]){
+//                      count++
+//                      if(count == arr1.length){
+//                          array.push([arr1,arr2])
+//                      }
                  
-                 }
-             };
-             };
-             count = 0
-  }
- }
-document.write(array)
+//                  }
+//              };
+//              };
+//              count = 0
+//   }
+//  }
+// document.write(array)
