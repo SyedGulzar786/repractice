@@ -166,13 +166,117 @@
 // // OBJECT DESTRUCTURING :
 
 const obj = {
-    abc : "ABC"
+    abc : "ABC",
+    prop1: "val1",
+    prop2: "val2",
+    prop3: "val3",
+    student : {
+            name :"abc",
+            email:"abc@gmail.com",
+            classDetails : {
+                time : "9-11"
+            }
+        
+        },
+    prop: "abc",
+    school: "abcSchool"
 }
-console.log(obj.abc)
+// console.log(obj.abc)
 
 // // 1.) property to varibale
 
 // const {abc} = obj
-// console.log(abc)
+// console.log(obj,abc)
 
 // // 2.) multiple properties to varible
+
+// const {prop1, prop2, prop3} = obj
+// console.log(obj,prop1,prop2,prop3)
+
+// // 3.) default value
+
+// const {prop = "default"} = obj // when value dosent exist 
+// console.log(obj,prop)
+
+// // 4.) alias
+
+// const {prop : myprop} = obj  // changing property name through destructuring 
+// console.log(myprop)
+
+// // 5.) deep property
+
+// const {student : {email}} = obj  //destructuring out a deep prop 
+// console.log(email)
+
+// // 6.) dynamic property name
+
+// let search = "school" // stores the property name into an string variable .!!!
+// let { [search] : a} = obj  // putting the property variable in the dynamic brackets brings the value pf that property in the set variable a .!!!
+// console.log(a)
+
+
+// DEFUALT AND REST PARAMETERS
+//               // (defualt patameter),  // rest parameter
+// function abc(a = "not available", ...xyz){
+//  console.log(a, xyz) // the a returns the value meanwhile the xyz returns an array with all th rest of the values through rest parameters.
+// }
+// abc("hello", "when", "marimba", "rythem", "starts", "to", "play", true, 43, "43")
+
+// SPREAD OPERATOR (...)
+// what spread operator does is actually is that it only takes all the stored values from the var it is used before.
+// let arr1 = ["abv", "bhg", "hgy"]
+// let arr2 = [112, 33, 444]
+// let arr = [...arr1, ...arr2] 
+// console.log(arr, arr1, arr2)
+
+// DEEP COPY AND SHALLOW COPY
+// let obj1 = {...obj}
+// let obj2 = JSON.parse(JSON.stringify(obj))
+//  console.log(obj, obj1, obj2)
+ 
+// ENHANCED BOJECT LITERALS
+// let abc = "name";
+// let xyz = "email";
+
+// let object = {
+    // abc,
+    // xyz
+// }
+
+// console.log(object)
+
+// ARRAY METHODS FOR EACH, MAP, FILTER
+
+let arr  = [11, 22, "three", true, "5"]
+
+let arr1 = arr.forEach(
+    (elem, i , all) => { // elem, i .!!!
+     console.log("foreach --->",elem, i, all)  //.!!! // alteration
+     console.log("condition foreach --->",elem) // returns value on conditoni
+     return elem
+    }
+)
+console.log("arr1 --->",arr1) // undefined does not returns anything even after using return
+
+let arr2 = arr.map(
+    (elem , i , all) => {
+    console.log("map1 --->",elem, i, all) // .!!! 
+    console.log("map2 --->",`${elem} gotit`) // .!!!
+    console.log("condition map --->",elem) // returns value on conditoni
+    return elem
+    }
+)
+console.log("arr2 --->",arr2)  // retunrs an array with unidentifies inplace of values without using return with usign return it returns a complete array 
+
+let arr3 = arr.filter(
+    (elem , i , all) => { // elem .!!!
+    console.log("filter --->",elem, i, all) // true/false .!!!
+    // console.log(typeof 11)
+    if( typeof elem == "number" ){
+        // let store += elem 
+          console.log("condition filter --->",elem) // returns value on conditoni
+    }
+    return elem
+}
+)
+console.log("arr3 --->",arr3) // return an empty array without using return with usign return it returns a complete array 
