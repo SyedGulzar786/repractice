@@ -247,36 +247,36 @@ const obj = {
 
 // ARRAY METHODS FOR EACH, MAP, FILTER
 
-let arr  = [11, 22, "three", true, "5"]
+// let arr  = [11, 22, "three", true, "5"]
 
-let arr1 = arr.forEach(
-    (elem, i , all) => { // elem, i .!!!
-     console.log("foreach --->",elem, i, all)  //.!!! // alteration
-     console.log("condition foreach --->",elem) // returns value on conditoni
-     return elem
-    }
-)
-console.log("arr1 --->",arr1) // undefined does not returns anything even after using return
+// let arr1 = arr.forEach(
+//     (elem, i , all) => { // elem, i .!!!
+//      console.log("foreach --->",elem, i, all)  //.!!! // alteration
+//      console.log("condition foreach --->",elem) // returns value on conditoni
+//      return elem
+//     }
+// )
+// console.log("arr1 --->",arr1) // undefined does not returns anything even after using return
 
-let arr2 = arr.map(
-    (elem , i , all) => {
-    console.log("map1 --->",elem, i, all) // .!!! 
-    console.log("map2 --->",`${elem} gotit`) // .!!!
-    console.log("condition map --->",elem) // returns value on conditoni
-    return elem
-    }
-)
-console.log("arr2 --->",arr2)  // retunrs an array with unidentifies inplace of values without using return with usign return it returns a complete array 
+// let arr2 = arr.map(
+//     (elem , i , all) => {
+//     console.log("map1 --->",elem, i, all) // .!!! 
+//     console.log("map2 --->",`${elem} gotit`) // .!!!
+//     console.log("condition map --->",elem) // returns value on conditoni
+//     return elem
+//     }
+// )
+// console.log("arr2 --->",arr2)  // retunrs an array with unidentifies inplace of values without using return with usign return it returns a complete array 
 
-let arr3 = arr.filter(
-    (elem , i , all) => { // elem .!!!
-    console.log("filter --->",elem, i, all) // true/false .!!!
-    // console.log(typeof 11)
-    if( typeof elem == "number" ){
-        // let store += elem 
-          console.log("condition filter --->",elem) // returns value on conditoni
-    }
-    return elem
-}
-)
-console.log("arr3 --->",arr3) // return an empty array without using return with usign return it returns a complete array 
+// let arr3 = arr.filter(
+//     (elem , i , all) => { // elem .!!!
+//     console.log("filter --->",elem, i, all) // true/false .!!!
+//     // console.log(typeof 11)
+//     if( typeof elem == "number" ){
+//         // let store += elem 
+//           console.log("condition filter --->",elem) // returns value on conditoni
+//     }
+//     return elem
+// }
+// )
+// console.log("arr3 --->",arr3) // return an empty array without using return with usign return it returns a complete array 
