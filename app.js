@@ -129,3 +129,50 @@
 //   }
 //  }
 // document.write(array)
+
+
+// // destructuring
+// // let
+// let student = {
+//     name :"abc",
+//     email:"abc@gmail.com",
+//     classDetails : {
+//         time : "9-11"
+//     }
+
+// }
+
+// // so
+// let time  = "1212"
+// // console.log(time)
+// let {email, name, classDetails} = student // destructuring
+// let {time : classtime} = classDetails // renamibg a property .!!!
+// console.log(name, email, classDetails, classtime)
+
+
+// let obj = {
+//     name : "avcs",
+//     abcd : "avcdjfhf"
+// }
+//  let arr =  [123,1243.1223,23322,3331]
+// for(var bcd in obj){
+// console.log(bcd) // properties of obj .!!!
+// }
+// for(var abc of arr){
+// console.log(abc) // values of arr .!!!
+// }
+
+
+// // OBJECT DESTRUCTURING :
+
+const obj = {
+    abc : "ABC"
+}
+console.log(obj.abc)
+
+// // 1.) property to varibale
+
+// const {abc} = obj
+// console.log(abc)
+
+// // 2.) multiple properties to varible
