@@ -280,3 +280,17 @@ const obj = {
 // }
 // )
 // console.log("arr3 --->",arr3) // return an empty array without using return with usign return it returns a complete array 
+
+// // 4.; find()
+// let students = [{name:"abc",age:30},{name:"xyz",age:56},{name:"hij",age:20}]
+// let arr4 = students.find(function(elem){
+// return elem.age === 30 || elem.age > 20
+// })
+// console.log("result",arr4) // returns the first value which matches the condition .!!!
+
+// // 5.; findIndex()
+// let students = [{name:"abc",age:30},{name:"xyz",age:56},{name:"hij",age:20}]
+// let arr4 = students.findIndex(function(elem){
+// return elem.age === 30 || elem.age > 20
+// })
+// console.log("result",arr4) // returns the first value which matches the condition .!!!
