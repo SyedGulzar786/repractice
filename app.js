@@ -294,3 +294,36 @@ const obj = {
 // return elem.age === 30 || elem.age > 20
 // })
 // console.log("result",arr4) // returns the first value which matches the condition .!!!
+
+// // 6.; some()
+// let students = [{name:"abc",age:30},{name:"xyz",age:56},{name:"hij",age:20}]
+// let arr4 = students.some(function(elem){
+// return elem.age === 30 || elem.age > 20
+// })
+// console.log("result",arr4) // returns the first value which matches the condition .!!!
+
+// 6.; reduce()
+// let students = [{name:"abc",age:30,fee:5454},{name:"xyz",age:56,fee:5454},{name:"hij",age:20,fee:5454}]
+// let arr4 = students.reduce(function(a,v,i,all){
+// return a + v.fee 
+// },0)
+// console.log("result",arr4) 
+
+class School{
+    constructor(campus){
+      this.org = "ho";
+      this.campus = campus;  
+    }
+}
+class Student extends School{
+    constructor(campus,name,email){
+        super(campus)
+        this.name = name;
+        this.email = email;
+    }
+    getNamw(){
+        return this.name;
+    }
+}
+let student = new Student("kharadar","Gulzar","abc@gmail.com")
+console.log(student)
